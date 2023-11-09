@@ -4,6 +4,7 @@ from PIL import Image
 from torch.utils.data import Dataset
 from torchvision import transforms
 
+
 class POKE(Dataset):
 
     def __init__(self, data_path, transform=None, grayscale_images=[]):
@@ -15,7 +16,8 @@ class POKE(Dataset):
         self.transform = transform
         self.fpaths = []
 
-        image_paths = glob.glob(os.path.join(data_path, '*.jpg')) + glob.glob(os.path.join(data_path, '*.png'))
+        image_paths = glob.glob(os.path.join(
+            data_path, '*.jpg')) + glob.glob(os.path.join(data_path, '*.png'))
 
         for path in image_paths:
             if path not in grayscale_images:
@@ -28,4 +30,3 @@ class POKE(Dataset):
 
     def __len__(self):
         return len(self.fpaths)
-

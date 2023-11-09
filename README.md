@@ -6,7 +6,11 @@ The implementation was done on Google colab. Images were downloaded on to google
 
 Refer  ``` training_code.ipynb``` for codes related to training the model, and plotting results, ```dataloader.py``` for data preprocessing steps(remove incompatible images), ```model.py``` for Discriminator and Generator classes and their architecture.
 
+Refer  ```Training_code.ipynb``` for the training code .ipynb file.
 
+Refer ```training_code.py``` for the training code .py file.
+
+All code in this reposiroty is based on PEP-8 standards(Important for contributing to the repo).
 ## Sample generated Pokemon Image:
 
 ![Alt text](image.png)
